@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url(/img/back-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+/* .hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+  left: 80px; */
+
+.grass-img {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  bottom: 5px;
+}
+.scooter-img {
+  width: 150px;
+  position: absolute;
+  bottom: 5px;
+  animation: scooter;
+  animation: all 1s;
+  animation: scooter 20s infinite;
+  transform: translateX(100%);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.scooter-two {
+  width: 150px;
+  position: absolute;
+  bottom: 180px;
+  animation: scooter;
+  animation: all 1.6s;
+  animation: scooter 50s infinite;
+  transform: translateX(100%);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scooter {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(1000%);
+  }
+}
